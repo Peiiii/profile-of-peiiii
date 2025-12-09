@@ -1,5 +1,7 @@
 import React from 'react';
 
+export type Language = 'en' | 'zh';
+
 export interface Project {
   id: string;
   title: string;

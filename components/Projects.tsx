@@ -1,22 +1,26 @@
 import React from 'react';
 import { PROJECTS } from '../constants';
 import { ExternalLink, Github, Folder } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Projects: React.FC = () => {
+  const { language, t } = useLanguage();
+  const currentProjects = PROJECTS[language];
+
   return (
     <section id="projects" className="py-24 border-b border-white/5 relative overflow-hidden">
       {/* Section Header */}
       <div className="container mx-auto px-6 mb-12 flex items-end justify-between">
         <div>
-          <h2 className="text-4xl font-bold uppercase mb-2">Deployed_Modules</h2>
-          <p className="text-dim text-sm font-mono">/root/projects/public</p>
+          <h2 className="text-4xl font-bold uppercase mb-2">{t.projects.title}</h2>
+          <p className="text-dim text-sm font-mono">{t.projects.path}</p>
         </div>
         <div className="hidden md:block h-px w-1/3 bg-white/10"></div>
       </div>
 
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {PROJECTS.map((project, index) => (
+          {currentProjects.map((project, index) => (
             <div 
               key={project.id} 
               className="group border border-white/10 bg-surface/50 hover:bg-surfaceHighlight transition-colors duration-300 relative overflow-hidden"
@@ -52,12 +56,12 @@ const Projects: React.FC = () => {
                 <div className="flex gap-4">
                   {project.link && (
                     <a href={project.link} className="flex items-center gap-2 text-xs font-bold text-white hover:text-secondary uppercase tracking-wider">
-                      <ExternalLink size={14} /> Run
+                      <ExternalLink size={14} /> {t.projects.run}
                     </a>
                   )}
                   {project.github && (
                     <a href={project.github} className="flex items-center gap-2 text-xs font-bold text-white hover:text-secondary uppercase tracking-wider">
-                      <Github size={14} /> Source
+                      <Github size={14} /> {t.projects.source}
                     </a>
                   )}
                 </div>

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Terminal, Activity, Wifi } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Navbar: React.FC = () => {
   const [time, setTime] = useState(new Date());
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const timer = setInterval(() => setTime(new Date()), 1000);
@@ -10,10 +12,10 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navItems = [
-    { label: './HOME', id: 'home' },
-    { label: './PROJECTS', id: 'projects' },
-    { label: './STACK', id: 'about' },
-    { label: './CONTACT', id: 'contact' },
+    { label: t.nav.home, id: 'home' },
+    { label: t.nav.projects, id: 'projects' },
+    { label: t.nav.stack, id: 'about' },
+    { label: t.nav.contact, id: 'contact' },
   ];
 
   return (
@@ -37,11 +39,29 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Right: Status Indicators */}
-      <div className="flex items-center gap-4 text-dim">
+      {/* Right: Status Indicators & Language Toggle */}
+      <div className="flex items-center gap-6 text-dim">
+        
+        {/* Language Switcher - Hacker Style */}
+        <div className="flex items-center gap-1 font-mono cursor-pointer border border-white/10 px-2 py-0.5 hover:border-primary/50 transition-colors">
+          <span 
+            className={`${language === 'en' ? 'text-primary font-bold' : 'text-dim hover:text-white'} transition-colors`}
+            onClick={() => setLanguage('en')}
+          >
+            EN
+          </span>
+          <span className="text-dim/50">/</span>
+          <span 
+            className={`${language === 'zh' ? 'text-primary font-bold' : 'text-dim hover:text-white'} transition-colors`}
+            onClick={() => setLanguage('zh')}
+          >
+            ZH
+          </span>
+        </div>
+
         <div className="hidden md:flex items-center gap-2">
           <Activity size={12} className="text-primary animate-pulse" />
-          <span>SYSTEM NORMAL</span>
+          <span>{t.nav.system_normal}</span>
         </div>
         <div className="flex items-center gap-2">
           <Wifi size={12} />

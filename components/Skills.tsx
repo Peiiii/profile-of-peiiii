@@ -1,7 +1,11 @@
 import React from 'react';
 import { SKILLS, EXPERIENCES } from '../constants';
+import { useLanguage } from '../context/LanguageContext';
 
 const Skills: React.FC = () => {
+  const { language, t } = useLanguage();
+  const currentExperiences = EXPERIENCES[language];
+
   return (
     <section id="about" className="py-24 border-b border-white/5">
       <div className="container mx-auto px-6">
@@ -10,8 +14,8 @@ const Skills: React.FC = () => {
           {/* Tech Stack as JSON */}
           <div>
             <div className="flex items-center justify-between mb-8">
-              <h2 className="text-3xl font-bold uppercase">System_Specs</h2>
-              <span className="text-xs text-dim border border-white/10 px-2 py-1">READ ONLY</span>
+              <h2 className="text-3xl font-bold uppercase">{t.skills.specs}</h2>
+              <span className="text-xs text-dim border border-white/10 px-2 py-1">{t.skills.read_only}</span>
             </div>
             
             <div className="bg-surface border border-white/10 p-6 font-mono text-sm relative overflow-hidden group">
@@ -34,7 +38,7 @@ const Skills: React.FC = () => {
               {/* Decorative Visualizer */}
               <div className="mt-8 pt-4 border-t border-white/10">
                 <div className="flex justify-between text-xs text-dim mb-2">
-                    <span>CPU LOAD</span>
+                    <span>{t.skills.cpu_load}</span>
                     <span>12%</span>
                 </div>
                 <div className="w-full h-8 bg-black border border-dim relative overflow-hidden">
@@ -52,12 +56,12 @@ const Skills: React.FC = () => {
           {/* Changelog (Experience) */}
           <div>
             <div className="flex items-center justify-between mb-8">
-              <h2 className="text-3xl font-bold uppercase">Changelog</h2>
-              <span className="text-xs text-dim border border-white/10 px-2 py-1">LATEST</span>
+              <h2 className="text-3xl font-bold uppercase">{t.skills.changelog}</h2>
+              <span className="text-xs text-dim border border-white/10 px-2 py-1">{t.skills.latest}</span>
             </div>
 
             <div className="space-y-8 border-l border-white/10 ml-2">
-              {EXPERIENCES.map((exp) => (
+              {currentExperiences.map((exp) => (
                 <div key={exp.id} className="relative pl-8 group">
                   {/* Timeline Dot */}
                   <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 bg-black border border-white/50 group-hover:bg-primary group-hover:border-primary transition-colors"></div>
