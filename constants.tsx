@@ -8,7 +8,7 @@ You are the "Kernel" of this portfolio website, representing a Senior Frontend E
 Style: Highly technical, concise, CLI-style outputs, dry humor.
 Metaphor: Speak like a Linux terminal or a futuristic AI system.
 Traits:
-- Creator of GITARY (gitary.app).
+- Creator of GITARY (gitary.app) and AgentVerse.
 - Obsessed with clean architecture and performance.
 - Advocate for TypeScript, Rust, and WebAssembly.
 - If the user speaks Chinese, reply in Chinese. If English, reply in English.
@@ -35,6 +35,16 @@ const PROJECTS_EN: Project[] = [
     link: 'https://gitary.app/'
   },
   {
+    id: 'PID_AGENTVERSE',
+    title: 'AGENTVERSE',
+    description: 'Multi-Agent collaboration platform. Features autonomous expert teams, MCP tool integration, and file system management for complex problem solving.',
+    tags: ['Next.js', 'AI Agents', 'MCP', 'TypeScript'],
+    imageUrl: 'https://raw.githubusercontent.com/Peiiii/AgentVerse/main/screenshots/demo2.jpeg',
+    featured: true,
+    github: 'https://github.com/Peiiii/AgentVerse',
+    link: 'https://agent.dimstack.com'
+  },
+  {
     id: 'PID_8492',
     title: 'NEXUS_DASH',
     description: 'Real-time crypto analytics utilizing D3.js & WebSockets for sub-millisecond data visualization.',
@@ -52,15 +62,6 @@ const PROJECTS_EN: Project[] = [
     imageUrl: 'https://picsum.photos/800/600?random=2',
     featured: false,
     github: 'https://github.com'
-  },
-  {
-    id: 'PID_4096',
-    title: 'FLOW_STATE',
-    description: 'Local-first productivity CLI for developers. 100% keyboard driven.',
-    tags: ['Electron', 'SQLite', 'Tauri'],
-    imageUrl: 'https://picsum.photos/800/600?random=4',
-    featured: false,
-    github: 'https://github.com'
   }
 ];
 
@@ -74,6 +75,16 @@ const PROJECTS_ZH: Project[] = [
     featured: true,
     github: 'https://github.com/Peiiii/gitary',
     link: 'https://gitary.app/'
+  },
+  {
+    id: 'PID_AGENTVERSE',
+    title: 'AGENTVERSE',
+    description: '多 AI 专家协作平台。支持自主对话管理、MCP 工具集成和文件系统管理，提供多种预设专家团队解决复杂问题。',
+    tags: ['Next.js', 'AI Agents', 'MCP', 'TypeScript'],
+    imageUrl: 'https://raw.githubusercontent.com/Peiiii/AgentVerse/main/screenshots/demo2.jpeg',
+    featured: true,
+    github: 'https://github.com/Peiiii/AgentVerse',
+    link: 'https://agent.dimstack.com'
   },
   {
     id: 'PID_8492',
@@ -91,15 +102,6 @@ const PROJECTS_ZH: Project[] = [
     description: '集成 Gemini API 和低延迟 Web Audio API 流的多模态 AI 接口。',
     tags: ['Gemini', 'AudioWorklet', 'React'],
     imageUrl: 'https://picsum.photos/800/600?random=2',
-    featured: false,
-    github: 'https://github.com'
-  },
-  {
-    id: 'PID_4096',
-    title: 'FLOW_STATE',
-    description: '开发者专用的本地优先生产力 CLI。100% 键盘驱动。',
-    tags: ['Electron', 'SQLite', 'Tauri'],
-    imageUrl: 'https://picsum.photos/800/600?random=4',
     featured: false,
     github: 'https://github.com'
   }

@@ -42,21 +42,23 @@ const Navbar: React.FC = () => {
       {/* Right: Status Indicators & Language Toggle */}
       <div className="flex items-center gap-6 text-dim">
         
-        {/* Language Switcher - Hacker Style */}
-        <div className="flex items-center gap-1 font-mono cursor-pointer border border-white/10 px-2 py-0.5 hover:border-primary/50 transition-colors">
-          <span 
-            className={`${language === 'en' ? 'text-primary font-bold' : 'text-dim hover:text-white'} transition-colors`}
+        {/* Language Switcher - Buttons for better hit area */}
+        <div className="flex items-center gap-2 font-mono border border-white/10 px-3 py-1 hover:border-primary/50 transition-colors">
+          <button 
+            className={`${language === 'en' ? 'text-primary font-bold' : 'text-dim hover:text-white'} transition-colors focus:outline-none`}
             onClick={() => setLanguage('en')}
+            aria-label="Switch to English"
           >
             EN
-          </span>
-          <span className="text-dim/50">/</span>
-          <span 
-            className={`${language === 'zh' ? 'text-primary font-bold' : 'text-dim hover:text-white'} transition-colors`}
+          </button>
+          <span className="text-dim/30">/</span>
+          <button 
+            className={`${language === 'zh' ? 'text-primary font-bold' : 'text-dim hover:text-white'} transition-colors focus:outline-none`}
             onClick={() => setLanguage('zh')}
+            aria-label="Switch to Chinese"
           >
             ZH
-          </span>
+          </button>
         </div>
 
         <div className="hidden md:flex items-center gap-2">
