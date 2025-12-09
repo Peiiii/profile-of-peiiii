@@ -55,12 +55,22 @@ const Projects: React.FC = () => {
 
                 <div className="flex gap-4">
                   {project.link && (
-                    <a href={project.link} className="flex items-center gap-2 text-xs font-bold text-white hover:text-secondary uppercase tracking-wider">
+                    <a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-xs font-bold text-white hover:text-secondary uppercase tracking-wider"
+                    >
                       <ExternalLink size={14} /> {t.projects.run}
                     </a>
                   )}
                   {project.github && (
-                    <a href={project.github} className="flex items-center gap-2 text-xs font-bold text-white hover:text-secondary uppercase tracking-wider">
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-xs font-bold text-white hover:text-secondary uppercase tracking-wider"
+                    >
                       <Github size={14} /> {t.projects.source}
                     </a>
                   )}
