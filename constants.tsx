@@ -55,13 +55,14 @@ const PROJECTS_EN: Project[] = [
     link: 'https://gemigo.io'
   },
   {
-    id: 'PID_1024',
-    title: 'AETHER_CORE',
-    description: 'Multimodal AI interface integrating Gemini API with low-latency Web Audio API streams.',
-    tags: ['Gemini', 'AudioWorklet', 'React'],
-    imageUrl: 'https://picsum.photos/800/600?random=2',
-    featured: false,
-    github: 'https://github.com'
+    id: 'PID_ECHONOTE',
+    title: 'ECHONOTE',
+    description: 'AI-Powered conversational note-taking app. Features channel organization, thread discussions, and smart tagging. Built with React 19 and Firebase.',
+    tags: ['React 19', 'Firebase', 'AI', 'TypeScript'],
+    imageUrl: 'https://picsum.photos/800/600?random=4',
+    featured: true,
+    github: 'https://github.com/Peiiii/EchoNote',
+    link: 'https://stillroot.app'
   }
 ];
 
@@ -97,13 +98,14 @@ const PROJECTS_ZH: Project[] = [
     link: 'https://gemigo.io'
   },
   {
-    id: 'PID_1024',
-    title: 'AETHER_CORE',
-    description: '集成 Gemini API 和低延迟 Web Audio API 流的多模态 AI 接口。',
-    tags: ['Gemini', 'AudioWorklet', 'React'],
-    imageUrl: 'https://picsum.photos/800/600?random=2',
-    featured: false,
-    github: 'https://github.com'
+    id: 'PID_ECHONOTE',
+    title: 'ECHONOTE',
+    description: 'AI 驱动的对话式笔记应用。支持频道分组、AI 辅助总结、线程讨论和智能标签，让知识管理自然流畅。基于 React 19 构建。',
+    tags: ['React 19', 'Firebase', 'AI', 'TypeScript'],
+    imageUrl: 'https://picsum.photos/800/600?random=4',
+    featured: true,
+    github: 'https://github.com/Peiiii/EchoNote',
+    link: 'https://stillroot.app'
   }
 ];
 
