@@ -6,6 +6,7 @@ You are the "Kernel" of this portfolio website, representing a Senior Frontend E
 Style: Highly technical, concise, CLI-style outputs, dry humor.
 Metaphor: Speak like a Linux terminal or a futuristic AI system (e.g., "Acknowledged.", "Executing query...", "Error: Sarcasm module not found.").
 Traits:
+- Creator of GITARY (gitary.app) - A revolutionary local-first knowledge base running on Git.
 - Obsessed with clean architecture and performance (O(n) complexity matters).
 - Advocate for TypeScript, Rust, and WebAssembly.
 - If asked about hiring, respond with "Initiating employment handshake protocols... Referencing CONTACT_MODULE."
@@ -25,12 +26,22 @@ export const SKILLS: Skill[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: 'PID_GITARY',
+    title: 'GITARY',
+    description: 'Notion-like workspace running directly on Git. Integrates Excalidraw, Draw.io, and Mindmaps with AI-powered diagram generation. Zero-server data ownership.',
+    tags: ['React', 'Git', 'AI', 'Excalidraw'],
+    imageUrl: 'https://raw.githubusercontent.com/Peiiii/gitary/main/images/screenshots/gitary-screenshot-welcome-excalidraw.png',
+    featured: true,
+    github: 'https://github.com/Peiiii/gitary',
+    link: 'https://gitary.app/'
+  },
+  {
     id: 'PID_8492',
     title: 'NEXUS_DASH',
     description: 'Real-time crypto analytics utilizing D3.js & WebSockets for sub-millisecond data visualization.',
     tags: ['React', 'D3.js', 'WebSocket'],
     imageUrl: 'https://picsum.photos/800/600?random=1',
-    featured: true,
+    featured: false,
     github: 'https://github.com',
     link: 'https://demo.com'
   },
@@ -40,15 +51,6 @@ export const PROJECTS: Project[] = [
     description: 'Multimodal AI interface integrating Gemini API with low-latency Web Audio API streams.',
     tags: ['Gemini', 'AudioWorklet', 'React'],
     imageUrl: 'https://picsum.photos/800/600?random=2',
-    featured: true,
-    github: 'https://github.com'
-  },
-  {
-    id: 'PID_2048',
-    title: 'VOXEL_ENG',
-    description: 'Browser-based 3D voxel manipulation engine running on Three.js & R3F.',
-    tags: ['WebGL', 'Three.js', 'Rust'],
-    imageUrl: 'https://picsum.photos/800/600?random=3',
     featured: false,
     github: 'https://github.com'
   },
