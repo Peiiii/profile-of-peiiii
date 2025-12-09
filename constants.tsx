@@ -45,14 +45,14 @@ const PROJECTS_EN: Project[] = [
     link: 'https://agent.dimstack.com'
   },
   {
-    id: 'PID_8492',
-    title: 'NEXUS_DASH',
-    description: 'Real-time crypto analytics utilizing D3.js & WebSockets for sub-millisecond data visualization.',
-    tags: ['React', 'D3.js', 'WebSocket'],
-    imageUrl: 'https://picsum.photos/800/600?random=1',
-    featured: false,
-    github: 'https://github.com',
-    link: 'https://demo.com'
+    id: 'PID_GEMIGO',
+    title: 'GEMIGO',
+    description: 'One-click frontend deployment platform for non-experts. Deploys GitHub repos or ZIPs to Cloudflare Pages/R2. Features real-time build logs via SSE and multi-provider OAuth.',
+    tags: ['React', 'Cloudflare', 'Node.js', 'Docker'],
+    imageUrl: 'https://picsum.photos/800/600?random=3',
+    featured: true,
+    github: 'https://github.com/Peiiii/deploy-your-app',
+    link: 'https://gemigo.io'
   },
   {
     id: 'PID_1024',
@@ -87,14 +87,14 @@ const PROJECTS_ZH: Project[] = [
     link: 'https://agent.dimstack.com'
   },
   {
-    id: 'PID_8492',
-    title: 'NEXUS_DASH',
-    description: '基于 D3.js 和 WebSockets 的实时加密货币分析，支持亚毫秒级数据可视化。',
-    tags: ['React', 'D3.js', 'WebSocket'],
-    imageUrl: 'https://picsum.photos/800/600?random=1',
-    featured: false,
-    github: 'https://github.com',
-    link: 'https://demo.com'
+    id: 'PID_GEMIGO',
+    title: 'GEMIGO',
+    description: '面向非专业用户的前端应用一键部署平台。支持 GitHub 仓库或 ZIP 文件直连 Cloudflare Pages/R2。集成实时 SSE 日志流与多平台 OAuth 认证体系。',
+    tags: ['React', 'Cloudflare', 'Node.js', 'Docker'],
+    imageUrl: 'https://picsum.photos/800/600?random=3',
+    featured: true,
+    github: 'https://github.com/Peiiii/deploy-your-app',
+    link: 'https://gemigo.io'
   },
   {
     id: 'PID_1024',
