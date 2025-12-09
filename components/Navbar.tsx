@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2 text-primary">
           <Terminal size={14} />
-          <span className="font-bold">ALEX_OS <span className="text-dim">v2.5.0</span></span>
+          <span className="font-bold">PEIIII_OS <span className="text-dim">v2.5.0</span></span>
         </div>
         <div className="hidden md:flex items-center gap-4 ml-8">
           {navItems.map((item) => (

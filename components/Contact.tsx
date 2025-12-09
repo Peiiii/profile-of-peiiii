@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
             <div className="w-3 h-3 rounded-full bg-green-500/50"></div>
             <div className="ml-4 text-xs text-dim font-mono flex items-center gap-2">
                 <Terminal size={10} />
-                user@neo-dev: ~/contact
+                user@peiiii-dev: ~/contact
             </div>
           </div>
 

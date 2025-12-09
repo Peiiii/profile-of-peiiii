@@ -23,10 +23,10 @@ const Hero: React.FC = () => {
       <div className="absolute top-20 right-10 text-right opacity-10 pointer-events-none hidden md:block">
         <pre className="text-xs text-primary">
 {`const engineer = {
-  name: "Alex",
+  name: "Peiiii",
   level: "Senior",
   status: "Online",
-  drink: "Coffee"
+  drink: "Oolong"
 };`}
         </pre>
       </div>
